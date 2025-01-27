@@ -1,0 +1,34 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/qcwaaap/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/qcwaaap/frontend-project-44/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcwaaap/frontend-project-44.git"
+  },
+  "author": "Masha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qcwaaap/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/qcwaaap/frontend-project-44#readme",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "bin": {
+    "code": "bin/brain-games.js",
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0"
+  }
+}
