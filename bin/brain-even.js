@@ -28,6 +28,7 @@ console.log(rule);
                 return
             }
          }
+         console.log("Congratulations, " + name + "!");
     }
 YesOrNo()
 
