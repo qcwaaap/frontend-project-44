@@ -11,5 +11,6 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 brain-progression:
-    node brain-progression.js
-
+	node bin/brain-progression.js
+say: 
+	echo 'hello'

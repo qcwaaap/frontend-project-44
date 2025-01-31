@@ -1,1 +1,1 @@
-export  const getRandomNum = () => Math.floor(Math.random() * 100)
+export  const getRandomNum = (num = 100) => Math.floor(Math.random() * num)
