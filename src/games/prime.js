@@ -1,35 +1,29 @@
-#!/usr/bin/env node
 import sayHello from '../src/cli.js';
 import readlineSync from 'readline-sync';
 import { getRandomNum } from '../src/utils.js';
-    const rule = "Find the greatest common divisor of given numbers."
+    const rule = "Answer `yes` if given number is prime. Otherwise answer `no`."
         const getQueAndAnsw = () => {
-            const randomNum = getRandomNum();
-            const randomNum2 = getRandomNum();
-            const que = [randomNum, randomNum2];
+            const randomNum = getRandomNum()
+            const que = randomNum;
             // console.log(que)
-            const answ = NOD(randomNum, randomNum2);
+            const answ = isPrime(randomNum);
             return [que, answ];
         };
 const name = sayHello()
 console.log(rule);
-    function NOD (randomNum, randomNum2){ 
-        if (randomNum2 > randomNum){
-            return NOD(randomNum2, randomNum);
+    function isPrime (randomNum){ 
+       for (let i = 2; i < randomNum; i++){
+        if (randomNum % i === 0)
+            return `no`;
         }
-	    else if (!randomNum2) {
-            return randomNum;
-        }
-	    else{
-            return NOD(randomNum2, randomNum % randomNum2);  
-        }  
+        return `yes`;
     }
     const calc = () => {
         for (let i=0; i<3; i++){
             const [que, answ] = getQueAndAnsw();
-            console.log("Question: " + `${que[0]} ${que[1]}`)
+            console.log("Question: " + que)
             const userAnswer = readlineSync.question("Your answer: ");
-            if (+userAnswer === answ){
+            if (userAnswer === answ){
             console.log("Correct!")
             }
             else {

@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import sayHello from '../src/cli.js';
 import readlineSync from 'readline-sync';
 import { getRandomNum } from '../src/utils.js';
