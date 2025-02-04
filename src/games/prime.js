@@ -1,16 +1,12 @@
-import sayHello from '../src/cli.js';
-import readlineSync from 'readline-sync';
-import { getRandomNum } from '../src/utils.js';
-    const rule = "Answer `yes` if given number is prime. Otherwise answer `no`."
-        const getQueAndAnsw = () => {
+import { getRandomNum } from '../utils.js';
+  export const rule = "Answer `yes` if given number is prime. Otherwise answer `no`."
+        const getQuestionAndAnswer = () => {
             const randomNum = getRandomNum()
             const que = randomNum;
             // console.log(que)
             const answ = isPrime(randomNum);
             return [que, answ];
         };
-const name = sayHello()
-console.log(rule);
     function isPrime (randomNum){ 
        for (let i = 2; i < randomNum; i++){
         if (randomNum % i === 0)

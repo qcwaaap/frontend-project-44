@@ -1,7 +1,5 @@
-import sayHello from '../src/cli.js';
-import readlineSync from 'readline-sync';
-import { getRandomNum } from '../src/utils.js';
-const rule = "What number is missing in the progression?"
+import { getRandomNum } from '../utils.js';
+ export const rule = "What number is missing in the progression?"
 
 const createProgression = () => {
     const start = getRandomNum();
