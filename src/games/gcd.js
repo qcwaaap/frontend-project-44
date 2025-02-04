@@ -3,7 +3,7 @@ import { getRandomNum } from '../utils.js';
       export const getQuestionAndAnswer = () => {
             const randomNum = getRandomNum();
             const randomNum2 = getRandomNum();
-            const que = [randomNum, randomNum2];
+            const que = [randomNum, randomNum2].join(" ");
             const answ = NOD(randomNum, randomNum2);
             return [que, answ];
         };
@@ -12,7 +12,7 @@ import { getRandomNum } from '../utils.js';
             return NOD(randomNum2, randomNum);
         }
 	    else if (!randomNum2) {
-            return randomNum;
+            return String(randomNum);
         }
 	    else{
             return NOD(randomNum2, randomNum % randomNum2);  
