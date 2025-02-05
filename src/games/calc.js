@@ -8,7 +8,7 @@ const getCount = (randomNum, operator, randomNum2) => {
     return randomNum * randomNum2;
   case '-':
     return randomNum - randomNum2;
-  default: console.log('Error');
+  default: return 'Error';
   }
 };
 export const rule = 'What is the result of the expression?';
