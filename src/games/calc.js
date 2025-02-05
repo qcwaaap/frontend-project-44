@@ -18,7 +18,7 @@ const getCount = (randomNum, operator, randomNum2) => {
             const randomNum = getRandomNum();
             const randomNum2 = getRandomNum();
             const randomOperator = point[randomPoint]
-            const question = `${randomNum} ${randomOperator} ${randomNum2}`;
+            const que = `${randomNum} ${randomOperator} ${randomNum2}`;
             const answ = String(getCount(randomNum, randomOperator, randomNum2))
-            return [question, answ];
+            return [que, answ];
         };
