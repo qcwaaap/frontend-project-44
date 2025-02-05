@@ -12,5 +12,5 @@ export const getQuestionAndAnswer = () => {
     const answer = String(que[index]);
     const p = [...que];
     p[index] = '..';
-    return [p, answer];
+    return [p.join(" "), answer];
 }
