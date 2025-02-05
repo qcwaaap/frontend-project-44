@@ -26,8 +26,8 @@ export default [
     '@stylistic/js': stylisticJs
   },
   rules: {
-      '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/indent': ['error', 2],
+      'quotes': ['error', 'single'],
+      'indent': ['error', 2],
       "import/extensions": ['off'],
       "no-console": ['off'],
       "comma-dangle": ["error", "never"],
