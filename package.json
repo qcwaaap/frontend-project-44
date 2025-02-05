@@ -18,6 +18,7 @@
   "homepage": "https://github.com/qcwaaap/frontend-project-44#readme",
   "type": "module",
   "dependencies": {
+    "@stylistic/eslint-plugin-js": "^3.0.1",
     "readline-sync": "^1.4.10"
   },
   "bin": {

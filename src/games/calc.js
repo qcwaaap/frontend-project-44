@@ -1,8 +1,8 @@
-import { getRandomNum } from '../utils.js';
+import getRandomNum from '../utils.js';
 
 const getCount = (randomNum, operator, randomNum2) => {
   switch (operator) {
-    case '+':
+  case '+':
       return randomNum + randomNum2;
     case '*':
       return randomNum * randomNum2;
