@@ -2,13 +2,13 @@ import getRandomNum from '../utils.js';
 
 const getCount = (randomNum, operator, randomNum2) => {
   switch (operator) {
-  case '+':
-    return randomNum + randomNum2;
-  case '*':
-    return randomNum * randomNum2;
-  case '-':
-    return randomNum - randomNum2;
-  default: return 'Error';
+    case '+':
+      return randomNum + randomNum2;
+    case '*':
+      return randomNum * randomNum2;
+    case '-':
+      return randomNum - randomNum2;
+    default: return 'Error';
   }
 };
 export const rule = 'What is the result of the expression?';
