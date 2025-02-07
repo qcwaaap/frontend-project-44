@@ -4,6 +4,7 @@
 # Brain-games
 
 My game was created for the purpose of an educational project. It includes five simple games. Before each game the rules are described so I will not duplicate this information
+- To install the game on your computer you need to enter the command **git clone + link repository** in your terminal 
 
 How use these games:
 
